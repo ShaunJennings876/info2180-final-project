@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Login </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="signIn.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="newUserScreen.html"><img id="logo" src= "bug.png" width= 40px height=40px></a>
+        <h2>BugMe Issue Tracker</h2>
+        </div>
+    </div>
+
+    <div class="space">
+        <img src="bug.png" class="bug" >
+    </div>
+
+    <div id= "main">
+      <form action = "scripts/login.php" method = "post">
+        <p> Email address
+        <input type="text" id="email" class="email" name = "email"></p>
+        <p> Password
+        <input type="password" id="pword" class="pword" name = "pass" required> </p>
+        <button type = "submit" id="btn" name = "submit" class="login">Login</button>
+      </form>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+.main{
+	display: grid;
+	grid-template-rows: 1fr 1fr 5fr;
+	grid-gap: 0.6rem;
+	grid-row: 2;
+	grid-column: 3 / span 8;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-row: 1;
+}
+
+.newIssue{
+	background-color: #2bad53;
+	width: 180px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+	border-style: none;
+}
+
+#aboveTitles{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	grid-row: 2;
+}
+
+#aboveTitles li{
+	padding: 0.5rem;
+	font-size: 0.65rem;
+	font-weight: 900;
+	padding: 0.5rem;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+#activeTicket{
+	border-radius: 5px;
+	color: #fff;
+	background-color: #037bfc;
+}
+
+.titles{
+	display: flex;
+	justify-content: space-around;
+	grid-row: 3;
+	list-style: none;
+	padding: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 900;
+	padding: 0.5rem;
+}
+.open{
+	border-radius: 5px;
+	color: #fff;
+	background-color: #2bad53;
+}
+.closed{
+	border-radius: 5px;
+	color: #fff;
+	background-color: #f0311f;
+	
+}
+.inprogress{
+	border-radius: 5px;
+	color: #fff;
+	background-color: #fcd703;
+}

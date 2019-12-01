@@ -1,0 +1,40 @@
+/* Stylesheet for login page */
+#main{
+    grid-column: 5 / span 4;
+	margin-top: 150px;
+}
+
+img.bug {
+width: 400%;
+}
+
+.space{
+    padding: 60px;
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.login{
+    background-color: #fc6b03;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  p{
+    font-weight: bold;
+  }

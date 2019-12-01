@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>New User Page</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="newUserScreen.css">
+        <!--<script type = "text/javascript" src = "scripts/loadpages.js"></script>-->
+</head>
+<body>
+
+  <!--Header Section-->
+        <div class="header">
+                <a href="newUserScreen.html"><img id="logo" src= "bug.png" width= 40px height=40px></a>
+                <h2>BugMe Issue Tracker</h2>
+                </div>
+        </div>
+
+  <!--Sidebar Section-->
+        <div class="sidebar">
+                <div class="sidebar_container">
+                        <div class="sideItems">
+                                <img id="home" src= "home.png" width= 20px height=20px>
+                                <a href = "home.php" id = "homelink">Home</a>
+                        </div>
+
+                        <div class="sideItems">
+                                <img id="phone" src= "addUser.png" width= 20px height=20px>
+                                <a href = "newUserScreen.html" id = "userlink">Add User</a>
+                        </div>
+                        <div class="sideItems">
+                                <img id="phone" src= "plus.png" width= 20px height=20px>
+                                <a href = "issue.php" id = "issuelink">New Issue</a>
+                        </div>
+                        <div class="sideItems">
+                                <img id="phone" src= "logout.png" width= 20px height=20px>
+                                <a href = "signin.html">Logout</a>
+                        </div>
+                </div>
+                </div>
+  <!--Main Content Section-->
+        <div id="main">
+                <h1> New User</h1>
+                <form action = "scripts/update.php" method = "post">
+                  <p> First name
+                  <input type="text" id = "fname" name = "fname" class="fname" placeholder="Enter first name" required></p>
+                  <p> Last name
+                  <input type="text" id = "lname" name = "lname" class="lname" placeholder="Enter last name" required></p>
+                  <p> Password
+                  <input type="password" id = "pass" name = "pass" class="pass" placeholder="Enter a suitable password" required></p>
+                  <p> Email
+                  <input type="text" id = "email" name = "email" class="email" placeholder="Enter email adress" required></p>
+                  <br>
+                  <button id = "btn" name = "submit" class="submit"> Submit </button>
+                </form>
+
+        </div>
+
+</body>
+</html>
